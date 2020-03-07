@@ -1,0 +1,74 @@
+@import "./theme.less";
+.header{
+    &-container{
+        position: fixed;
+        top:0;
+        left: 0;
+        width:100%;
+        //background-color: #373d41;
+        height: @g-header-height ;
+    //    border-bottom: 1px solid ;
+       
+    }
+    &-left{
+        float:left;
+        line-height: @g-header-height;
+        color:#ededed;
+        text-align: center;
+        width:60px;
+        height: transparent;
+        cursor: pointer;
+        &:hover{
+          //  background-color: #2a2f32;
+
+            background-color: #35a5ff;
+            
+          // background-color: #ededed;
+        }
+    }
+    &-right{
+        padding:0px 16px;
+        line-height: @g-header-height;
+        color:#ededed;
+        text-align: center;
+        height: transparent;
+        width:auto;
+        cursor: pointer;
+        white-space : nowrap ;
+        &:hover{
+           // background-color: #2a2f32;
+            background-color: #35a5ff;
+        
+           // background-color: #ededed;
+        }
+    }
+    &-userright{
+      //  padding:0px 16px;
+
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+    }
+}
+.rightcontainer{
+    float: right;
+    padding:0px,24px;
+    height:transparent;
+    width:35vw;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+}
+.headimg{
+    width:35px;
+    height: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+    // img{
+    //     display: inline-block;
+    //     height: auto;
+    //     max-width:100%;
+    //     vertical-align:middle;
+    // }
+}

@@ -1,0 +1,31 @@
+.colorpane
+{
+    display: flex;
+    flex-direction: row;
+    height:128px;
+    cursor: pointer;
+    &-commom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:#ffffff;
+        width:50%;
+        height:inherit;
+    }
+    &-left{
+        font-size:64px;
+    }
+    &-right{
+        background-color: #ffffff;
+        flex-direction: column;
+        color:#6b7474;
+        &-num{
+            font-weight: 300;
+            font-size:48px;
+        }
+        &-title{
+            font-size:15px;
+        }
+
+    }
+}

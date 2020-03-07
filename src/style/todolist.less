@@ -1,0 +1,46 @@
+.listContainer
+{
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    &-title{
+        background-color: #f2f3f6;
+        font-size:17px;
+        padding:7px;
+       // font-weight: 600;
+    }
+    &-body{
+        padding:7px;
+    }
+    ul{
+        max-height:300px;
+        overflow-y: auto;
+    }
+}
+.itemcontainer
+{
+    border-bottom:1px solid #f2f3f6;
+    font-size:16px;
+    &-redfont{
+        color:#f04134;
+        cursor:pointer;
+    }
+    &-greenfont{
+        color:#1da57a;
+    }
+}
+.fade-enter {
+    opacity:0.01;
+}
+.fade-enter.fade-enter-active {
+    opacity:1;
+    transition:opacity 500ms ease-in;
+}
+    
+.fade-leave {
+    opacity:1;
+}
+.fade-leave.fade-leave-active {
+    opacity:0.01;
+    transition:opacity 200ms ease-in;
+}
